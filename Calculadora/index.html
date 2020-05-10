@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+    
+
+</head>
+
+<body>
+
+    <header>
+        <link href="estilos.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="controlador.js"></script>
+    </header>
+
+  <h2>Calculadora</h2>
+
+<div id="cuerpo">
+    <div id="entrada">
+        <input type="text" id="valores" size="30" /><br><br>
+    </div>
+
+    <div id="botones">
+        <button onclick="datos('7')">7</button> &nbsp;
+        <button onclick="datos('8')">8</button> &nbsp;
+        <button onclick="datos('9')">9</button> &nbsp;
+        <button onclick="datos('/')">/</button> &nbsp; &nbsp; &nbsp; &nbsp; 
+        <button onclick="borrar_todo()">C</button> <br><br>
+
+        <button onclick="datos('4')">4</button> &nbsp;
+        <button onclick="datos('5')">5</button> &nbsp;
+        <button onclick="datos('6')">6</button> &nbsp;
+        <button onclick="datos('*')">*</button> <br><br>
+    
+        <button onclick="datos('1')">1</button> &nbsp;
+        <button onclick="datos('2')">2</button> &nbsp;
+        <button onclick="datos('3')">3</button> &nbsp;
+        <button onclick="datos('+')">+</button> <br><br>
+    
+        <button onclick="datos('0')">0</button> &nbsp;
+        <button onclick="datos('.')">.</button> &nbsp;
+        <button onclick="calcular()">=</button> &nbsp;
+        <button onclick="datos('-')">-</button>
+    </div>              
+</div>
+  
+</body>
+</html>
