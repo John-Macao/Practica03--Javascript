@@ -1,0 +1,35 @@
+body {
+    background-color: lightgreen;
+}
+
+h2 {
+    width: 10%;
+    position: relative;
+    left: 45%;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#cuerpo {
+    width:24%;
+    position: relative;
+    left: 36%;
+    padding: 14px;
+    border: 3px black solid;
+    background-color: #5b5b5b;
+}
+
+#entrada input {
+    padding: 3px;
+    position: relative;
+    left: 15%;
+    text-align: right;
+}
+
+#botones {
+    padding: 12px;
+    background-color: #303030;
+}
+
+button {
+    width: 15%;
+}
