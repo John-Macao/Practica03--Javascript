@@ -18,6 +18,7 @@ var con = 0;
 
 function antes(){
     document.getElementById('.aa').style.left=200 + "px";
+    alert(document.getElementById("bb").style.left);
     //var capa = document.getElementById('');
     //document.getElementById(aaIMG[0]).style.left = 200 + "px";
     
