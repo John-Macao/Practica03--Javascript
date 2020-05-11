@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,8 +22,8 @@
             <button onclick="antes()">Anterior</button>
             
 
-            <!--<button class="atras" onclick="anterior()">Anterior</button>
-            -->
+ comentar esta parte  ///<button class="atras" onclick="anterior()">Anterior</button>
+            
                 <button class="inicio" onclick="inicio()">Iniciar</button>
             <button class="adelante" onclick="siguiente()">Siguiente</button>
         </div>
@@ -35,3 +36,48 @@
     </script>
 </body>
 </html>
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Presentación </title>
+<link rel="stylesheet" type="text/css" href="estiloImagenes.css" media="all" /> 
+<script type="text/javascript" src="controlImagenes.js"></script>
+</head>
+<body>
+<h1>Presentación de fotos</h1>
+<!-- Elemento pantalla donde se ven las fotos:  -->
+<div id="visor">
+   <!-- colocaremos aquí la foto nueva mediante javascript -->
+   <div id="fotoEntra">
+   </div>
+	 <!-- Esta es la foto saliente al pulsar algún botón -->
+   <div id="fotoSale">
+      <img src="imagenes/1.jpg" alt="1. India - Agra - El taj Majal." width="400" name="fotos">
+   </div>
+</div>
+<!-- Elemento del pie de foto, aparte del texto colocamos aquí los botones que 
+     permitirán cambiar de imagen. -->
+<div id="piefoto">
+   <!-- Botones para retroceso de imagen -->
+   <div id="controlesre">
+
+      <!--<img src="rew.gif" alt="principio" width="30" onclick="mueve('prin')" /> 
+      <img src="atras.gif" alt="atras" width="30" onclick="mueve('retro')" /> -->
+
+      <button id="botonretro" onclick="mueve('retro')">Anterior</button>
+   </div>
+   <!-- Botones para avance de imagen -->
+   <div id="controlesav">
+    <button id="botonAvanza" onclick="mueve('avance')">Siguiente</button>
+
+    <!--  <img src="play.gif" alt="avance" width="30" onclick="mueve('avance')" />
+      <img src="avv.gif" alt="final" width="30" onclick="mueve('fin')" /> -->
+   </div>
+   <!-- Texto del pie de foto -->
+   <div id="mititulo">1. India - Agra - El taj Majal.</div> 
+</div>
+</body>
+</html>
+
