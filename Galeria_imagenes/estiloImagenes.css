@@ -1,0 +1,37 @@
+body{
+    margin: 0px;
+    background-color: #063463;
+}
+
+img {
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    left: 500px;
+    top: 500px;
+    display:block;
+    
+}
+
+.cuerpo{
+    /*width: 80%; */
+    text-align: center;
+    margin-top: 100px;
+    border: 3px red solid;
+}
+
+.cuerpoImg{
+    border: 2px black solid;
+    overflow: hidden;
+    box-shadow:0px 0px 20px gray inset;
+
+}
+
+.botones button{
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+
