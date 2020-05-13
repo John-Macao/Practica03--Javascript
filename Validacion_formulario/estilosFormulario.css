@@ -1,0 +1,12 @@
+body{
+    background-color: darksalmon;
+}
+
+#cuerpo{
+    float: left;
+    width: 500px;
+    margin-top: 10px;
+    margin-left: 520px;
+    height: max-content;
+    background-color: darkseagreen;
+}

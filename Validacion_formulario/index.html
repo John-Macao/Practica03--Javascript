@@ -1,97 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <meta charset="UTF-8">
- <script type="text/javascript" src="validacion.js"></script>
- 
- <style type="text/css">
- .error {
- color: red;
- font-size: 8px;
- }
-
- </style>
-
+    <meta charset="UTF-8">
+    <link   rel="stylesheet" type="text/css" href="estilosFormulario.css"/>
+    <script type="text/javascript" src="validacion.js"></script>
+    <title>Formulario</title>
 </head>
 <body>
- <form id="formulario01" method="POST" action="" onsubmit="return validarCamposObligatorios()">
- <label for="cedula">Cedula (*)</label>
- <input type="text" id="cedula" name="cedula" value="" placeholder="Ingrese el número de cedula ..."/>
- <span id="mensajeCedula" class="error"></span>
- <br>
 
- <label for="nombres">Nombres (*)</label>
- <input type="text" id="nombres" name="nombres" value="" placeholder="Ingrese sus dos nombres ...
-" onkeyup="return validarLetras(this)"/>
- <br>
- <label for="apellidos">Apelidos (*)</label>
- <input type="text" id="apellidos" name="apellidos" value="" placeholder="Ingrese sus dos apellidos ...
-" />
- <br>
- <label for="direccion">Dirección (*)</label>
- <input type="text" id="direccion" name="direccion" value="" placeholder="Ingrese su dirección ..." />
- <br>
- <label for="telefono">Teléfono (*)</label>
- <input type="text" id="telefono" name="telefono" value="" placeholder="Ingrese su número telefónico
-..." />
- <br>
- <label for="fecha">Fecha Nacimiento (*)</label>
- <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="" placeholder="Ingrese su
-fecha de nacimiento ..." />
- <br>
- <label for="correo">Correo electrónico (*)</label>
- <input type="email" id="correo" name="correo" value="" placeholder="Ingrese su correo electrónico ..
-." />
- <br>
- <label for="correo">Contraseña (*)</label>
- <input type="password" id="contrasena" name="contrasena" value="" placeholder="Ingrese su contra
-seña ..." />
- <br>
- <input type="submit" id="crear" name="crear" value="Aceptar" />
- <input type="reset" id="cancelar" name="cancelar" value="Cancelar" />
- </form>
+    <div id="cuerpo">
+        <form action="../php/validacion.php" onsubmit="return confirmar()">
+            <fieldset>
+            <legend>
+                Formulario de Validacion
+            </legend>
+    
+                <label> Cédula (*):</label><br>
+                <input type="text" id="cedula" size="15" onblur="verCedula()" onkeyup="soloLetrasC()" > 
+                &nbsp; &nbsp; <span id="advCedula" ></span> <br> <br>
+    
 
- <br><br><br><br><br><br><br><br><br><br>
+                <label> Nombres (*):</label><br>
+                <input type="text" id="nombre" size="25" onblur="verNombres()" onkeyup="soloLetrasN()">
+                &nbsp; &nbsp; <span id="advNombres" ></span> <br> <br>
 
- 
-    <form>
-      <fieldset>
-        <legend>
-          Formulario de Validacion  
-         </legend>
+    
+                <label> Apellidos (*):</label><br>
+                <input type="text" id="apellido" size="25" onblur="verApellidos()" onkeyup="soloLetrasA()">
+                &nbsp; &nbsp; <span id="advApellido" class="error"></span> <br> <br>
 
-         <label for="Cedula" >Cedula</label>
-          <input type="number" id="cedula"/><br><br>
+    
+                <label> Direccion (*):</label><br>
+                <input type="text" id="direccion" size="30" onblur="verDireccion()">
+                &nbsp; &nbsp; <span id="advDireccion" ></span> <br> <br>
+              
 
-         <label for="Nombre">Nombre</label>
-          <input type="text" id="nombre" size="21"/><br><br>
+                <label> Telefono (*):</label><br>
+                <input type="text" id="telefono" size="25" onkeyup="verTelefono()" onblur="tamañoTelefono()">
+                &nbsp; &nbsp; <span id="advTelefono" ></span> <br> <br>
 
 
-          <label for="Apellido">Apellido</label>
-          <input type="text" id="apellido" size="21"/><br><br>
+                <label> Fecha de nacimiento (*):</label><br>
+                <input type="text" id="Fecha" size="10" onkeyup="verFecha()">
+                &nbsp; &nbsp; <span id="advFecha" ></span> <br>
+                <span> (dd/mm/yyyy)</span><br> <br>
+
+                
+                <label> Correo Electrónico (*):</label><br>
+                <input type="text" id="Correo" size="25" onblur="verCorreo()">
+                &nbsp; &nbsp; <span id="advCorreo" ></span> <br>
+                <span> (@ups.edu.ec)</span><br>
+                <span> (@est.ups.edu.ec)</span><br> <br>
+
+                <label> Contraseña (*):</label><br>
+                <input type="password" id="password" size="25" onblur="verContraseña()">
+                &nbsp; &nbsp; <span id="advPassword" ></span> <br> <br>
+    
+    
+                <input type="submit" value="Aceptar" onclick="verContraseña();
+                verCorreo();verFecha();verTelefono();verDireccion();verApellidos();
+                verNombres();soloLetrasC()">
+            
+            </fieldset>
+        </form>
+    </div>
 
 
-          <label for="Direccion" >Direccion</label>
-          <input type="text" id="direccion" size="25" /><br><br>
-
-         <label for="Telefono">Telefono</label>
-          <input type="number" id="telefono" size="20"/><br><br>
-
-
-         <label for="Correo">Correo</label>
-          <input type="text" id="correo" size="23" /><br><br>
-
-          <label for="Contraseña">Contraseña</label>
-          <input type="text" id="contraseña" size="17" /><br><br>
-
-
-        <input type="submit" value="Aceptar">
-      
-      </fieldset>
-  </form>
-
-
-
+    
 </body>
-
 </html>
+
+
+
+
