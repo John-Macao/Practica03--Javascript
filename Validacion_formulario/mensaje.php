@@ -7,7 +7,7 @@
 <body>
     <?php 
 
-    $saludo= "Bienvenido";
+    $saludo= "Bienvenido pasate las validaciones";
 
     echo "$saludo";
     
