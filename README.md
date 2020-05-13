@@ -7,16 +7,16 @@
 
 ## a. Se debe validar qué, en el campo de la cedula, se ingrese sólo números y que la misma sea correcta, en base, al último dígito verificador.
 ## Esta parte del código me permite verificar si la cedula es auténtica, devolviéndome al final un tru o un false.
-![2](/imagenesReadMe/2.jpg?raw=true "Title")
+![2](/imagenesReadMe/2.png?raw=true "Title")
 
 
 ## b. Se debe validar qué, en el campo del nombres, ingrese exclusivamente dos nombre y que permita ingresar sólo letras, por ejemplo: “Gabriel Alejandro”, es válido; “Gabriel”, no es válido.
 ## Esta parte del código me verifica que, en el campo de nombres, se ingresen los dos nombres correspondientes
-![3](/imagenesReadMe/3.jpg?raw=true "Title")
+![3](/imagenesReadMe/3.png?raw=true "Title")
 
 ## A su ves esta parte del código me permite verificar si lo que ingreso el usuario son solo letras y no números.
 
-![4](/imagenesReadMe/4.jpg?raw=true "Title")
+![4](/imagenesReadMe/4.png?raw=true "Title")
 
 
 
